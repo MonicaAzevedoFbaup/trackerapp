@@ -1,0 +1,23 @@
+body {
+padding:20px;
+}
+
+#calendar {     }
+
+.clickable {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #e0eaf1;
+  border-bottom: 1px solid #b3cee1;
+  border-right: 1px solid #b3cee1;
+  color: #3e6d8e;
+  display: inline-block;
+  font-size: 90%;
+  line-height: 1.4;
+  margin: 2px 2px 2px 0;
+  padding: 3px 4px 3px 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}

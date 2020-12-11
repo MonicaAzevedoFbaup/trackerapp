@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <!--MónicaAzevedo-->
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="body.css">
+      <link rel="stylesheet" href="Calender.css">
+      <link href='Calender2.css' rel='stylesheet' />
+
+      <title>Food Calender</title>
+
+  <body>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div id="alert"></div>
+                  <div id='calendar'></div>
+              </div>
+              <div class="col-md-6">
+                  <ul id="myTab" class="nav nav-tabs" role="tablist">
+                      <li class="active"><a href="#viewTab" data-id="viewTab" role="tab" data-toggle="tab">Ver</a></li>
+                      <li><a href="#addTab" data-id="addTab" role="tab" data-toggle="tab">Adicionar</a></li>
+                      <li><a href="#editTab" data-id="editTab" role="tab" data-toggle="tab">Editar</a></li>
+                      <li><a href="#searchTab" data-id="searchTab" role="tab" data-toggle="tab">Pesquisar</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                      <div class="tab-pane active" id="viewTab">
+                          <p><div id="tracker"></div></p>
+                      </div>
+                      <div class="tab-pane" id="addTab">
+                          <div id="addForm">
+                              <form>
+                                  <div><br />
+                                      <label for="item">Item:</label>
+                                      <input type="text" name="item" id="item" autofocus="autofocus"><br />
+                                      <label for="bestBefore"> Anterior:</label>
+                                      <input name="bestBefore" id="bestBefore" type="text" class="date-picker"><br />
+                                      <button id="submit" class="fc-button fc-state-default fc-corner-left fc-corner-right">Salvar</button>
+                                  </div>
+                              </form>
+                              <div id="status"></div>
+                          </div>
+                      </div>
+
+                      <div class="back-row-toggle splat-toggle">
+                                 <div class="rain front-row"></div>
+                                 <div class="rain back-row"></div>
+                                 <div class="toggles">
+                                 </div>
+
+                      <div class="tab-pane" id="editTab">
+                          <br /><h6></h6>
+                          <div id="editForm">
+                              <form>
+                                  <div>
+                                      <label for="item">Item:</label>
+                                      <input type="text" id="eitem"><br />
+                                      <label for="bestBefore"> Anterior:</label>
+                                      <input name="ebestBefore" id="ebestBefore" type="text" class="date-picker"><br />
+                                      <input type="hidden" id="itemId" value="">
+                                      <button id="update" class="fc-button fc-state-default fc-corner-left fc-corner-right">Salvar</button>
+                                     </div>
+                                  </form>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                 </div>
+             </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+      <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.1/moment.min.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.1.1/fullcalendar.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.min.js"></script>
+      <script src="stylejs.js"></script>
+
+  </body>
+  </html>
